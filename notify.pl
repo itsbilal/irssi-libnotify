@@ -28,6 +28,7 @@ sub sanitize {
   $text =~ s/</&lt;/g;
   $text =~ s/>/&gt;/g;
   $text =~ s/'/&apos;/g;
+  $text =~ s/\\/\\\\/g;
   return $text;
 }
 
